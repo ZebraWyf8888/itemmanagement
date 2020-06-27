@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+
+    android:paddingRight="10dp">
+
+    <!-- 登录后的产品经理界面-->
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="欢迎使用"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="项目管理系统"
+        android:textSize="20sp" />
+
+
+
+
+    <Button
+        android:id="@+id/student_activity_selectInfo"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="70dp"
+        android:text="查询个人信息" />
+
+    <Button
+        android:id="@+id/student_activity_changePassword"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_activity_selectInfo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="修改密码" />
+
+
+    <Button
+        android:id="@+id/admin_activity_selectall"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_activity_changePassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="查询项目信息" />
+
+
+    <com.example.he.studenmanagement.tools.RoundImageView
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="302dp"
+        android:layout_alignBottom="@+id/student_activity_changePassword"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-23dp"
+        android:layout_marginBottom="233dp"
+        android:layout_toRightOf="@+id/tv2"
+        android:src="@drawable/producte" />
+
+
+</RelativeLayout>

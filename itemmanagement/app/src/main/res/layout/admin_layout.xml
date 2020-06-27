@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <!-- 登录后的管理员界面-->
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:text="软件项目简易管理APP"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp" />
+
+
+    <com.example.he.studenmanagement.tools.RoundImageView
+        android:id="@+id/pic"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="-38dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:src="@drawable/engineer" />
+
+    <Button
+        android:id="@+id/admin_activity_select"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/admin_activity_add"
+        android:layout_alignLeft="@+id/admin_activity_add"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="286dp"
+        android:text="查询项目信息" />
+
+    <Button
+        android:id="@+id/admin_activity_add"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_activity_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-80dp"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginTop="77dp"
+        android:text="添加项目信息" />
+
+
+</RelativeLayout>
